@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>User</title>
+</head>
+<body>
+    <% if (locals.user) { %>
+        <h1 class="title">Hello, <%= user.first_name %> <%= user.last_name %> </h1>
+        <p class="subtitle">Explore the latest anonymous posts from our community</p>
+      <% } %>
+      <a href="/log-Out">log Out</a>
+      
+ 
+
+
+</body>
+</html>
