@@ -1,14 +1,13 @@
 function ensureExclusive(req, res, next) {
   if (!req.isAuthenticated()) {
-    return res.redirect("/");
+    return res.redirect("/log-in"); 
   }
-  
-  console.log("User role:", req.user.role); // Debugging line
 
   if (req.user.role === "exclusive") {
     return next();
   }
-  
-  res.redirect("/");
+
+  res.redirect("/login-user"); // Redirect members instead of sending them to the home page
 }
+
 module.exports = { ensureExclusive };

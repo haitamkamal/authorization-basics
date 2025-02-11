@@ -6,14 +6,11 @@
   <title>User</title>
 </head>
 <body>
-    <% if (locals.user) { %>
+    <h1>Member</h1>
+    <% if (user) { %>
         <h1 class="title">Hello, <%= user.first_name %> <%= user.last_name %> </h1>
         <p class="subtitle">Explore the latest anonymous posts from our community</p>
-      <% } %>
-      <a href="/log-Out">log Out</a>
-      
- 
-
-
+    <% } %>
+    <a href="/log-out">Log Out</a>
 </body>
 </html>
